@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Start a project · CortexLab</title>
+<meta name="description" content="Start a project with CortexLab, a Johannesburg creative-tech studio: AI automation, brand design, social media management and YouTube automation.">
+<meta name="theme-color" content="#FAFAF7">
+<meta name="color-scheme" content="light">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='17' r='14' fill='%23D9C07A'/%3E%3Ccircle cx='11.5' cy='15.5' r='2.2' fill='%2316140F'/%3E%3Ccircle cx='20.5' cy='15.5' r='2.2' fill='%2316140F'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#form">Skip to the form</a>
+<header class="top">
+  <a class="logo" href="https://cortexlab.co.za" translate="no">CortexLab<span aria-hidden="true">.</span></a>
+  <span class="status"><i aria-hidden="true"></i>Accepting new projects</span>
+</header>
+
+<main class="wrap">
+  <section class="stage" aria-labelledby="title">
+    <p class="kicker">Start a project</p>
+    <h1 id="title">Tell us what you&rsquo;re <em>building.</em></h1>
+    <p class="lede">A Johannesburg creative-tech studio for AI automation, brand design and content. Share a few details and we&rsquo;ll pick it up on WhatsApp.</p>
+
+    <div class="buddy-slot" id="slot"><div class="buddy-wrap" id="buddyWrap">
+      <div class="halo" aria-hidden="true"></div>
+      <div class="bubble" id="bubble" role="status" aria-live="polite">Hi, I&rsquo;m Corti.</div>
+      <svg id="buddy" class="buddy" viewBox="0 0 300 300" role="img" aria-label="Corti, a soft gold blob character that follows your cursor">
+        <defs>
+          <radialGradient id="body" cx="40%" cy="28%" r="85%">
+            <stop offset="0" stop-color="#F4EACB"/>
+            <stop offset=".5" stop-color="#E2CB8C"/>
+            <stop offset="1" stop-color="#CDAF5E"/>
+          </radialGradient>
+          <radialGradient id="shine" cx="35%" cy="25%" r="35%">
+            <stop offset="0" stop-color="#fff" stop-opacity=".5"/>
+            <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+          </radialGradient>
+          <clipPath id="eyeClip"><ellipse rx="17" ry="20"/></clipPath>
+        </defs>
+        <ellipse class="shadow" cx="150" cy="276" rx="74" ry="7"/>
+        <g id="rig">
+          <path id="blob" fill="url(#body)" d=""/>
+          <path id="blobShine" fill="url(#shine)" d=""/>
+          <g id="face">
+            <g class="eye" id="eyeL" transform="translate(120 140)">
+              <g clip-path="url(#eyeClip)">
+                <ellipse class="white" rx="17" ry="20"/>
+                <g class="pupil"><circle r="8.5"/><circle class="glint" cx="-2.6" cy="-3" r="2.2"/></g>
+                <rect class="lid" x="-21" y="-24" width="42" height="0"/>
+              </g>
+            </g>
+            <g class="eye" id="eyeR" transform="translate(180 140)">
+              <g clip-path="url(#eyeClip)">
+                <ellipse class="white" rx="17" ry="20"/>
+                <g class="pupil"><circle r="8.5"/><circle class="glint" cx="-2.6" cy="-3" r="2.2"/></g>
+                <rect class="lid" x="-21" y="-24" width="42" height="0"/>
+              </g>
+            </g>
+            <ellipse class="cheek" cx="100" cy="176" rx="11" ry="5.5"/>
+            <ellipse class="cheek" cx="200" cy="176" rx="11" ry="5.5"/>
+            <path id="mouth" class="mouth" d="M138 180 Q150 189 162 180"/>
+          </g>
+          <g id="hands">
+            <ellipse id="handL" class="hand" cx="94" cy="232" rx="20" ry="16"/>
+            <ellipse id="handR" class="hand" cx="206" cy="232" rx="20" ry="16"/>
+          </g>
+        </g>
+      </svg>
+      <div class="confetti" id="confetti" aria-hidden="true"></div>
+    </div></div>
+  </section>
+
+  <section class="panel" aria-labelledby="formTitle">
+    <h2 id="formTitle" class="sr-only">Project details</h2>
+    <form id="form" novalidate>
+      <div class="row">
+        <div class="field">
+          <label for="name">Your name</label>
+          <input id="name" name="name" autocomplete="name" required maxlength="80" placeholder="Thandi Mokoena">
+          <p class="err" id="name-err"></p>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" inputmode="email" autocomplete="email" spellcheck="false" required maxlength="120" placeholder="you@company.co.za">
+          <p class="err" id="email-err"></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="field">
+          <label for="service">What do you need?</label>
+          <select id="service" name="service" required>
+            <option value="">Choose a service</option>
+            <option>AI Automation</option>
+            <option>Brand Design</option>
+            <option>Social Media Management</option>
+            <option>YouTube Automation</option>
+            <option>A mix / not sure yet</option>
+          </select>
+          <p class="err" id="service-err"></p>
+        </div>
+        <div class="field">
+          <label for="budget">Budget (ZAR)</label>
+          <select id="budget" name="budget" required>
+            <option value="">Choose a range</option>
+            <option>Under R10,000</option>
+            <option>R10,000 – R25,000</option>
+            <option>R25,000 – R75,000</option>
+            <option>R75,000 – R150,000</option>
+            <option>R150,000+</option>
+            <option>Monthly retainer</option>
+            <option>Not sure yet</option>
+          </select>
+          <p class="err" id="budget-err"></p>
+        </div>
+      </div>
+      <div class="field">
+        <label for="message">About the project <span class="opt">Optional</span></label>
+        <textarea id="message" name="message" rows="3" maxlength="1200" autocomplete="off" placeholder="What are you building, and what does success look like?"></textarea>
+        <p class="hint"><span id="count">0</span> / 1200</p>
+      </div>
+      <div class="field check">
+        <input id="consent" name="consent" type="checkbox" required>
+        <label for="consent">I agree that CortexLab may use these details to reply to my enquiry, in line with POPIA. We never sell your information.</label>
+        <p class="err" id="consent-err"></p>
+      </div>
+      <button class="cta" type="submit">Send via WhatsApp <span class="arrow" aria-hidden="true">→</span></button>
+      <p class="fine">Opens WhatsApp to <span class="nowrap">+27&nbsp;76&nbsp;736&nbsp;0827</span> with your details filled in. Nothing is stored on this page.</p>
+      <p class="done" id="done" hidden></p>
+    </form>
+  </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
